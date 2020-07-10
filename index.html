@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Form Submit</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script> function createFcn(nm){(window.freshsales)[nm]=function(){(window.freshsales).push([nm].concat(Array.prototype.slice.call(arguments,0)))}; } (function(url,appToken,formCapture){window.freshsales=window.freshsales||[];if(window.freshsales.length==0){list='init identify trackPageView trackEvent set'.split(' ');for(var i=0;i<list.length;i++){var nm=list[i];createFcn(nm);}var t=document.createElement('script');t.async=1;t.src='https://d17ojfgbuzqkhr.cloudfront.net/assets/analytics.js';var ft=document.getElementsByTagName('script')[0];ft.parentNode.insertBefore(t,ft);freshsales.init('https://athish.freshsales.io','c5c0b3f4b7d9dacffd6e6d394f7720c76a06f1fce50efeed1ff94572480f4532',true);}})();
+</script>
+<script>
+	$(document).ready(function(){
+	    $("#submit").click(function(){
+	        $("#myForm").submit(); // Submit the form
+	    });
+	});
+	</script>
+</head>
+<body>
+hey there!!!
+    <form method="post" id="myForm">
+        <label>First Name:</label>
+        <input type="text" name="first-name"><br>
+        <label>Last Name:</label>
+        <input type="" name="last-name"><br>
+        <label>Email:</label>
+        <input type="email" name="email"><br>
+				<label>Segment</label>
+				<input type="text" name="segment"><br>
+				<p>
+					Radio 2
+					<input type="radio" name="q2" value="yes">Yes
+					<input type="radio" name="q2" value="no">No
+				</p>
+        <button type="button" id="submit">Submit Form</button>
+    </form>
+</body>
+</html>
