@@ -1,0 +1,143 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+	<script> function createFcn(nm){(window.freshsales)[nm]=function(){(window.freshsales).push([nm].concat(Array.prototype.slice.call(arguments,0)))}; } (function(url,appToken,formCapture){window.freshsales=window.freshsales||[];if(window.freshsales.length==0){list='init identify trackPageView trackEvent set'.split(' ');for(var i=0;i<list.length;i++){var nm=list[i];createFcn(nm);}var t=document.createElement('script');t.async=1;t.src='https://d1vnqx4rbheji7.cloudfront.net/assets/analytics.js';var ft=document.getElementsByTagName('script')[0];ft.parentNode.insertBefore(t,ft);freshsales.init('https://autorefresh01.fsales.io','0e5f5c96137cecd8934fa524b8c0bb126d9ab40b87bba6aaae91c978e2a10950',true);}})();
+
+function test(){
+
+	alert("ok");
+	document.getElementsByName("firstForm").style="display: none;"
+	document.getElementsByName("secondForm").style="display: inherit;"
+}
+	</script>
+</head>
+<div class="container">
+  <form id="contact">
+    <h3>Complete Details</h3>
+    <fieldset>
+			<label>fs_contact</label>
+			<select>
+        <option value="false">false</option>
+        <option value="true">true</option>
+      </select>
+		</fieldset>
+    <fieldset>
+			<label>First Name</label>
+      <input placeholder="First name" type="text" tabindex="1">
+    </fieldset>
+		<fieldset>
+			<label>Last Name</label>
+      <input placeholder="Last name" type="text" tabindex="1">
+    </fieldset>
+    <fieldset>
+			<label>Email</label>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required autofocus>
+    </fieldset>
+    <fieldset>
+			<label>Mobile: </label>
+      <input placeholder="Mobile number" type="tel" tabindex="3">
+    </fieldset>
+    <fieldset>
+			<label>Address</label>
+      <input placeholder="Your Address" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+			<label>City</label>
+      <input placeholder="Your city" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+			<label>State</label>
+      <input placeholder="Your state" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+			<label>Zipcode</label>
+      <input placeholder="Your city" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+			<label>Country</label>
+      <input placeholder="Your country" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+			<label>Company Name</label>
+      <input placeholder="Your company" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+			<label>Work number</label>
+      <input placeholder="111-111-1111" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+			<label>Department</label>
+      <input placeholder="Your Department" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+      <label>Company address</label>
+      <input placeholder="Your Address" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+      <label>Company city</label>
+      <input placeholder="Your city" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+      <label>Company state</label>
+      <input placeholder="Your state" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+      <label>Company zipcode</label>
+      <input placeholder="Your city" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+      <label>Company country</label>
+      <input placeholder="Your country" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+      <label>Source</label>
+      <select>
+        <option value=""></option>
+        <option value="Web">Web</option>
+        <option value="Organic Search">Organic Search</option>
+        <option value="Email">Email</option>
+        <option value="Phone">Phone</option>
+        <option value="Chat">Chat</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <label>Custom text</label>
+      <input placeholder="Custom text" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+      <label>Custom number</label>
+      <input placeholder="Custom text" type="number" tabindex="3">
+    </fieldset>
+    <fieldset>
+      <label>Custom Dropdown</label>
+      <select>
+        <option value=""></option>
+        <option value="Samsung">Samsung</option>
+        <option value="Apple">Apple</option>
+        <option value="Google">Google</option>
+        <option value="Moto">Moto</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <label>Available</label>
+      <input placeholder="Available date" type="date" tabindex="3">
+    </fieldset>
+    <fieldset>
+      <label for="Gender">Gender</label><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+    </fieldset>
+    <fieldset>
+      <input type="checkbox" id="Interested" name="Interested in our offer" value="Bike">
+      <label for="Interested"> Interested in our offers</label><br>
+    </fieldset>
+    <fieldset>
+			<label>Type Your message</label>
+      <textarea placeholder="Type your message here...." tabindex="5"></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" onclick="createFcn()">Submit</button>
+    </fieldset>
+  </form>
+</div>
