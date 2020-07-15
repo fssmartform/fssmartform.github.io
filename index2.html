@@ -1,13 +1,6 @@
 <head>
   <link rel="stylesheet" href="style.css">
 	<script> function createFcn(nm){(window.freshsales)[nm]=function(){(window.freshsales).push([nm].concat(Array.prototype.slice.call(arguments,0)))}; } (function(url,appToken,formCapture){window.freshsales=window.freshsales||[];if(window.freshsales.length==0){list='init identify trackPageView trackEvent set'.split(' ');for(var i=0;i<list.length;i++){var nm=list[i];createFcn(nm);}var t=document.createElement('script');t.async=1;t.src='https://d1vnqx4rbheji7.cloudfront.net/assets/analytics.js';var ft=document.getElementsByTagName('script')[0];ft.parentNode.insertBefore(t,ft);freshsales.init('https://autorefresh01.fsales.io','0e5f5c96137cecd8934fa524b8c0bb126d9ab40b87bba6aaae91c978e2a10950',true);}})();
-
-function test(){
-
-	alert("ok");
-	document.getElementsByName("firstForm").style="display: none;"
-	document.getElementsByName("secondForm").style="display: inherit;"
-}
 	</script>
 </head>
 <div class="container">
@@ -114,7 +107,7 @@ function test(){
       <textarea placeholder="Type your message here...." tabindex="5"></textarea>
     </fieldset>
     <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" onclick="createFcn()">Submit</button>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
     </fieldset>
   </form>
 </div>
