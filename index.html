@@ -1,21 +1,43 @@
 <html>
 <head>
-<script> function createFcn(nm){(window.freshsales)[nm]=function(){(window.freshsales).push([nm].concat(Array.prototype.slice.call(arguments,0)))}; } (function(url,appToken,formCapture){window.freshsales=window.freshsales||[];if(window.freshsales.length==0){list='init identify trackPageView trackEvent set'.split(' ');for(var i=0;i<list.length;i++){var nm=list[i];createFcn(nm);}var t=document.createElement('script');t.async=1;t.src='https://d1vnqx4rbheji7.cloudfront.net/assets/analytics.js';var ft=document.getElementsByTagName('script')[0];ft.parentNode.insertBefore(t,ft);freshsales.init('https://testmuthu.fsales.io','40b700547f113da9850730728ac2f3914a5dcf36134e3ea100e5291463f9bafe',true);}})();
-</script>
+  <link rel="stylesheet" href="style.css">
+  <script> function createFcn(nm){(window.freshsales)[nm]=function(){(window.freshsales).push([nm].concat(Array.prototype.slice.call(arguments,0)))}; } (function(url,appToken,formCapture){window.freshsales=window.freshsales||[];if(window.freshsales.length==0){list='init identify trackPageView trackEvent set'.split(' ');for(var i=0;i<list.length;i++){var nm=list[i];createFcn(nm);}var t=document.createElement('script');t.async=1;t.src='https://d1vnqx4rbheji7.cloudfront.net/assets/analytics.js';var ft=document.getElementsByTagName('script')[0];ft.parentNode.insertBefore(t,ft);freshsales.init('https://autorefresh01.fsales.io','0e5f5c96137cecd8934fa524b8c0bb126d9ab40b87bba6aaae91c978e2a10950',true);}})();</script>
 </head>
 <body>
-
-hey there!!!
-    <form method="post" id="myForm">
-        <label>First Name:</label>
-        <input type="text" name="first-name"><br>
-        <label>Last Name:</label>
-        <input type="" name="last-name"><br>
-        <label>Email:</label>
-        <input type="email" name="email"><br>
-				<label>Mobile</label>
-        <input type="text" name="mobile"><br>
-        <button type="button" id="submit">Submit Form</button>
-    </form>
+<div class="container" name="firstForm">
+  <form id="contact">
+    <h3>Basic Information</h3>
+		<fieldset>
+			<label>fs_contact</label>
+			<select>
+        <option value="false">false</option>
+        <option value="true">true</option>
+      </select>
+		</fieldset>
+    <fieldset>
+			<label>First name</label>
+      <input placeholder="First name" type="text" tabindex="1">
+    </fieldset>
+		<fieldset>
+			<label>Last name</label>
+      <input placeholder="Last name" type="text" tabindex="1">
+    </fieldset>
+    <fieldset>
+			<label>Email</label>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required autofocus>
+    </fieldset>
+    <fieldset>
+			<label>Mobile</label>
+      <input placeholder="Mobile number" type="tel" tabindex="3">
+    </fieldset>
+    <fieldset>
+			<label>Type your message</label>
+      <textarea placeholder="Type your message here...." tabindex="5"></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="button" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+</div>
 </body>
 </html>
