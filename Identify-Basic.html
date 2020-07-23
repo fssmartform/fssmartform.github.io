@@ -19,8 +19,8 @@ if(field.children.length==2 && ((field.children[1].tagName=="INPUT"&& field.chil
 new_contact[field.children[0].innerText]=value;
 }
 }
-console.log(new_contact)
-freshsales.identify(new_contact)
+//console.log(new_contact['Email'])
+freshsales.identify(new_contact['Email'],new_contact)
 }
 	</script>
 </head>
@@ -29,6 +29,13 @@ freshsales.identify(new_contact)
     <h3>Basic Information</h3>
 		<fieldset>
 			<label>fs_contact</label>
+			<select>
+        <option value="false">false</option>
+        <option value="true">true</option>
+      </select>
+		</fieldset>
+    <fieldset>
+			<label>fs_update</label>
 			<select>
         <option value="false">false</option>
         <option value="true">true</option>
