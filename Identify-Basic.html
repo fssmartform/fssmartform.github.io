@@ -10,13 +10,17 @@ var new_contact = {};
 for(var i=0;i<fields.length-1;i++){
 
 var field=fields[i];
-if(field.children.length=2 && field.children[1].tagName=="INPUT" && field.children[1].value ){
-new_contact[field.children[0].innerText]=field.children[1].value;
-
+if(field.children.length==2 && ((field.children[1].tagName=="INPUT"&& field.children[1].value) || field.children[1].tagName == "SELECT" && field.children[1].selectedOptions)){
+  var value = field.children[1].tagName=="INPUT"
+  if (field.children[1].tagName=="INPUT")
+    value = field.children[1].value;
+    else if (field.children[1].tagName == "SELECT")
+    value =  field.children[1].selectedOptions[0].value
+new_contact[field.children[0].innerText]=value;
 }
-
 }
-console.log(new_contact);
+console.log(new_contact)
+freshsales.identify(new_contact)
 }
 	</script>
 </head>
