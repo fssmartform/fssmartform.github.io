@@ -7,8 +7,8 @@ function test(){
 //	alert("ok");
 var fields = document.getElementsByTagName("fieldset");
 var new_contact = {};
+var company = {} ;
 for(var i=0;i<fields.length-1;i++){
-
 var field=fields[i];
 if(field.children.length==2 && ((field.children[1].tagName=="INPUT"&& field.children[1].value) || field.children[1].tagName == "SELECT" && field.children[1].selectedOptions)){
   var value = field.children[1].tagName=="INPUT"
@@ -16,9 +16,17 @@ if(field.children.length==2 && ((field.children[1].tagName=="INPUT"&& field.chil
     value = field.children[1].value;
     else if (field.children[1].tagName == "SELECT")
     value =  field.children[1].selectedOptions[0].value
-new_contact[field.children[0].innerText]=value;
+    if(field.children[0].innerText.includes('Company')) {
+      var c = field.children[0].innerText.split(' ')[1] ;
+      company[c.charAt(0).toUpperCase() + c.slice(1)]=value;
+    }
+      else
+      new_contact[field.children[0].innerText]=value;
 }
 }
+
+//console.log(company)
+new_contact['company'] = company
 console.log(new_contact)
 freshsales.identify(new_contact['Email'],new_contact)
 }
